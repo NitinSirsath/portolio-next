@@ -16,7 +16,7 @@ const About = () => {
             / / Frond-end Developer
           </p>
           <p className='py-2 text-gray-600'>
-            Hello I&apos;m Nitin, I&apos;m a final year computer science student from MGM-JNEC college in Aurangabad,       Maharashtra. I have always had a knack for
+            Hello I&apos;m Nitin, I&apos;m a final year computer science student from MGM-JNEC college in Aurangabad,     Maharashtra. I have always had a knack for
             technology and working with computers. I started working
             with HTML and CSS to make some minor edits on a small college prokects. What I thought was just a few small
             edits turned into a love for programming.
