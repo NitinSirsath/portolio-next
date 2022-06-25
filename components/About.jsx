@@ -24,7 +24,7 @@ const About = () => {
           <p className='py-2 text-gray-600'>
             Fascinated with how intricate programming can be I was quickly drawn
             to learn more. I started learning javascript and was even more
-            enthused with making websites interactive. I then started making projects in reactJS along some of it's libraries. I am
+            enthused with making websites interactive. I then started making projects in reactJS along some of it&apos;s libraries. I am
             now spending my time building projects with React JS, NextJS and
             learning new technologies.
           </p>
