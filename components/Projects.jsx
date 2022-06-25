@@ -5,6 +5,7 @@ import { data } from './projectData';
 
 
 const Projects = () => {
+
     // console.log({data});
   return (
     <div id='projects' className='w-full'>
@@ -27,6 +28,7 @@ const Projects = () => {
              <Link target="_blank" rel="noreferrer" href={project.deployed}>
                  <p className='text-center py-3 px-3 rounded-lg bg-white text-gray-700 hover:bg-gray-200  text-lg cursor-pointer'>Demo</p>
              </Link>
+            
              </div>
             
          </div>

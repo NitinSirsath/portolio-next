@@ -29,7 +29,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
         id : 5,
         logo : BsFillPersonLinesFill,
         name : 'person',
-        // link : 'https://www.linkedin.com/in/nitin-s-254294119/',
+        link : '../public/assets/resume.pdf',
 
     },
     {

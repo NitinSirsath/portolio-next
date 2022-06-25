@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg'
 import { data } from './mainSocialData';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
@@ -28,7 +29,13 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setError(validate(values))
-    setIsSubmit(true)
+    emailjs.sendForm('service_yji3izw', 'template_pwe9v8m', e.target , 'NjG9acHzrrZ6PSto5')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    // e.target.reset()
   };
 
   useEffect(() => {
@@ -83,6 +90,7 @@ const Contact = () => {
                     href={social.link}
                     target='_blank'
                     rel='noreferrer'
+                    download
                   >
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <social.logo />

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import {HiDownload} from 'react-icons/hi'
 // import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/navLogo.png'
 
@@ -68,7 +69,7 @@ const Navbar = () => {
               <Link href='/#projects'>Projects</Link>
             </li>
             <li className='ml-10 text-sm font-semibold  uppercase hover:border-b'>
-              <Link href='/resume'>Resume</Link>
+              <a href='../public/assets/resume.pdf' download>Resume &euro</a>
             </li>
             <li className='ml-10 text-sm font-semibold  uppercase hover:border-b'>
               <Link href='/#contact'>Contact</Link>
@@ -147,11 +148,11 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <Link href='/resume'>
+              <a href='../public/assets/resume.pdf' download>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Resume
                 </li>
-              </Link>
+              </a>
               <Link href='/#contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Contact
@@ -189,14 +190,14 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href='/resume'>
+                <a href='../public/assets/resume.pdf' download>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                   >
                     <BsFillPersonLinesFill />
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
