@@ -36,8 +36,11 @@ const Contact = () => {
     }, (error) => {
         console.log(error.text);
     });
-    setSubmitted(true)
-   setValues(initialValues)
+    if(values.name && values.email){
+      setSubmitted(true)
+      setValues(initialValues)
+    }
+    setIsSubmit(true)
   };
 
   useEffect(() => {
@@ -53,6 +56,9 @@ const Contact = () => {
     }
     if(!values.email){
         err.email = 'Please enter your E-mail'
+    }
+    if(!values.phone.length === 10){
+      err.phone = 'Please enter valid phone number'
     }
    return err
   }
@@ -138,6 +144,7 @@ const Contact = () => {
                     <label className='uppercase text-sm py-2'>
                       Phone Number
                     </label>
+                    {isSubmit ? <div className='text-red-600'><i>{error.phone}</i></div>:'' }
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='text'
@@ -149,7 +156,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Email <span className='text-red-600'>*</span></label>
-                  {isSubmit ? <div className='text-red-600'><i>{error.name}</i></div>:'' }
+                  {isSubmit ? <div className='text-red-600'><i>{error.email}</i></div>:'' }
                   <input
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     type='email'
