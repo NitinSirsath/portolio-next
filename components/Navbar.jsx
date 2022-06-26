@@ -148,7 +148,7 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <a href='../public/assets/resume.pdf' download>
+              <a href='/assets/resume.pdf' download>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Resume
                 </li>
