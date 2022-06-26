@@ -25,15 +25,15 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
         // link : 'https://www.linkedin.com/in/nitin-s-254294119/',
 
     },
+    // {
+    //     id : 5,
+    //     logo : BsFillPersonLinesFill,
+    //     name : 'person',
+    //     link : '../public/assets/resume.pdf',
+
+    // },
     {
         id : 5,
-        logo : BsFillPersonLinesFill,
-        name : 'person',
-        link : '../public/assets/resume.pdf',
-
-    },
-    {
-        id : 6,
         logo : AiFillYoutube,
         name : 'youtube',
         link : 'https://www.youtube.com/channel/UCT10UNN_quJOaPPp8uf9VcA',

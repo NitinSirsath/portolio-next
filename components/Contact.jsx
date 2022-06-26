@@ -21,6 +21,7 @@ const Contact = () => {
   const [values, setValues] = useState(initialValues)
   const [error, setError] = useState({})
   const [isSubmit, setIsSubmit] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
 
   const handleChange = (e) => {
     setValues({...values,[e.target.name] : e.target.value })
@@ -29,13 +30,14 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setError(validate(values))
-    emailjs.sendForm('service_yji3izw', 'template_pwe9v8m', e.target , 'NjG9acHzrrZ6PSto5')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
-    // e.target.reset()
+    // emailjs.sendForm('service_yji3izw', 'template_pwe9v8m', e.target , 'NjG9acHzrrZ6PSto5')
+    // .then((result) => {
+    //     console.log(result.text);
+    // }, (error) => {
+    //     console.log(error.text);
+    // });
+    setSubmitted(true)
+   setValues(initialValues)
   };
 
   useEffect(() => {
@@ -114,10 +116,11 @@ const Contact = () => {
 
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
+            
               <form
                 onSubmit={handleSubmit}
-                // action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
-                // method='POST'
+                action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
+                method='POST'
               >
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
@@ -175,6 +178,7 @@ const Contact = () => {
                     onChange={handleChange}
                   ></textarea>
                 </div>
+                {submitted ? <div className='p-3 rounded-xl w-28 text-white bg-[#43ce3694] m-2'>Submitted</div>:''}
                 <button className='w-full p-4 rounded-xl text-gray-100 mt-4'>
                   Send Message
                 </button>
