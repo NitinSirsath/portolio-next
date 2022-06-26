@@ -30,12 +30,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setError(validate(values))
-    // emailjs.sendForm('service_yji3izw', 'template_pwe9v8m', e.target , 'NjG9acHzrrZ6PSto5')
-    // .then((result) => {
-    //     console.log(result.text);
-    // }, (error) => {
-    //     console.log(error.text);
-    // });
+    emailjs.sendForm('service_yji3izw', 'template_pwe9v8m', e.target , 'NjG9acHzrrZ6PSto5')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
     setSubmitted(true)
    setValues(initialValues)
   };
