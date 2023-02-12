@@ -1,17 +1,25 @@
 
 
 import crypto from '../public/assets/projects/crypto.png';
-import RPA from '../public/assets/projects/RPA.png'
+import foodrecipe from '../public/assets/projects/foodrecipe.png'
 import form from '../public/assets/projects/form.png'
-import upsilon from '../public/assets/projects/upsilon.png'
+
 import weather from '../public/assets/projects/weather.png'
-import websiteUI from '../public/assets/projects/websiteUI.png'
+import cineflex from '../public/assets/projects/cineflex.png'
 
 
 
 export const data = [
     {
         id : 1,
+        name : 'Food Recipe App',
+        summary : 'Food recipe app where you can search for recipes and get the details of the recipe. Uses Firebase and developed in ReactJS technology. All componets are function and uses Hooks for state management, design with styled-component library, Material UI, fully function and responsive.',
+        image : foodrecipe,
+        github : 'https://github.com/NitinSirsath/food-recipe-app',
+        deployed : 'https://food-recipe-857c7.web.app/'
+    },
+    {
+        id : 2,
         name : 'Crypto-listing',
         summary : 'A cryptocurrency app for live pricing uses blog.postman API and styled components library, developed in ReactJS',
         image : crypto,
@@ -19,29 +27,21 @@ export const data = [
         deployed : 'https://loving-mahavira-4d441e.netlify.app/'
     },
     {
-        id : 2,
-        name : 'RPA-WebDesign',
-        summary : 'Robot-process-automation website UI',
-        image : RPA,
-        github : 'https://github.com/NitinSirsath/RPA-website-design',
-        deployed : 'https://priceless-mirzakhani-6a07a3.netlify.app/'
-    },
-    {
         id : 3,
-        name : 'Website-UI',
-        summary : 'Website structure and user interface. Responsive and styling using Bootstrap 5',
-        image : websiteUI,
-        github : 'https://github.com/NitinSirsath/intership-project',
-        deployed : 'https://infallible-jepsen-8b3a7d.netlify.app/'
+        name : 'CineFlex',
+        summary : 'CineFlex is netflix clone app, developed in NextJS technology.Uses TMDB API to fetch the data. All componets are function and uses Hooks for state management, design with styled-component library, fully function and responsive.',
+        image : cineflex,
+        github : 'https://github.com/NitinSirsath/cine-flex',
+        deployed : 'https://cine-flex-flame.vercel.app/'
      
     },
     {
         id : 4,
-        name : 'Upsilon-internship-design',
-        summary : 'React app based on UI and implemented dark mode and light functionality',
-         image : upsilon,
-        github : 'https://github.com/NitinSirsath/upsilon-internship',
-        deployed : 'https://steady-zuccutto-4cbd5f.netlify.app/'
+        name : 'User Dashboard',
+        summary : 'User Dashboard is a simple app where you choose a user and see the details of the user. Developed in ReactJS technology. All componets are function and uses Hooks for state management, design with styled-component library, fully function and responsive.',
+         image : '',
+        github : 'https://github.com/NitinSirsath/users-dashboard',
+        deployed : ''
     },
     {
         id : 5,
@@ -53,11 +53,11 @@ export const data = [
     },
     {
         id : 6,
-        name : 'Login-SignUP',
-        summary : 'login and signup form',
-        image : form,
-        github : 'https://github.com/NitinSirsath/login-signup-form',
-        deployed : 'https://creative-crepe-fe4877.netlify.app/'
+        name : 'Table Operations',
+        summary : 'Table Operations is a simple app where you can add, edit, delete the data from the table. Developed in ReactJS technology. Use can add specific tables. All componets are function and uses Hooks for state management, design with styled-component library, fully function and responsive.',
+        image : '',
+        github : 'https://github.com/NitinSirsath/table-operations',
+        deployed : ''
     }
    
 ]
