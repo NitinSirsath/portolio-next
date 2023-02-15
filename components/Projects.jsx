@@ -39,7 +39,8 @@ const Projects = () => {
                         Code
                       </p>
                     </Link>
-                    <Link
+  {
+    project?.deployed.length > 1 ?  <Link
                       target="_blank"
                       rel="noreferrer"
                       href={project?.deployed}
@@ -47,7 +48,8 @@ const Projects = () => {
                       <p className="text-center py-3 px-3 rounded-lg bg-white text-gray-700 hover:bg-gray-200  text-lg cursor-pointer">
                         Demo
                       </p>
-                    </Link>
+                    </Link> : ''
+  }
                   </div>
                 </div>
               </div>
