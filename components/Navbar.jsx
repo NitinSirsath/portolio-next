@@ -45,13 +45,13 @@ const Navbar = () => {
       <div className='flex justify-between shadow-md items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
           <a>
-            <Image
+{/*             <Image
               src={NavLogo}
               alt='/'
               width='100'
               height='40'
               className='cursor-pointer'
-            />
+            /> */}
           </a>
         </Link>
         <div>
