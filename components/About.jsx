@@ -13,7 +13,7 @@ const About = () => {
           </p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            / / Frond-end Developer
+            / / Fullstack Developer
           </p>
           <p className='py-2 text-gray-600'>
             Hello I&apos;m Onkar, I have completing my MCA degree in computer science student from MGM-JNEC college in Aurangabad,     Maharashtra. I have always had a knack for
