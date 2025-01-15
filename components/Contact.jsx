@@ -82,7 +82,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2'>Onkar Patil</h2>
+                <h2 className='py-2'>Nitin Sirsath</h2>
                 <p>Front-End Developer</p>
                 <p className='py-4'>
                   I am available for full-time positions. Contact
