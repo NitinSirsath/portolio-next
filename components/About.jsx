@@ -16,16 +16,16 @@ const About = () => {
             / / Fullstack Developer
           </p>
           <p className='py-2 text-gray-600'>
-            Hello I&apos;m Nitin, I have completed my B.Tech degree in computer science student from MGM-JNEC college in Aurangabad,     Maharashtra. I have always had a knack for
+            Hello, I&apos;m Nitin. I have completed my B.Tech degree in Computer Science from MGM-JNEC College in Aurangabad, Maharashtra. I have always had a knack for
             technology and working with computers. I started working
-            with HTML and CSS to make some minor edits on a small college prokects. What I thought was just a few small
+            with HTML and CSS to make some minor edits on small college projects. What I thought was just a few small
             edits turned into a love for programming.
           </p>
           <p className='py-2 text-gray-600'>
-            Fascinated with how intricate programming can be I was quickly drawn
-            to learn more. I started learning javascript and was even more
-            enthused with making websites interactive. I then started making projects in reactJS along some of it&apos;s libraries. I am
-            now spending my time building projects with React JS, NextJS and
+            Fascinated with how intricate programming can be, I was quickly drawn
+            to learn more. I started learning JavaScript and was even more
+            enthused about making websites interactive. I then started making projects in ReactJS along with some of its libraries. I am
+            now spending my time building projects with React JS, NextJS, and
             learning new technologies.
           </p>
           <Link href='/#projects'>
