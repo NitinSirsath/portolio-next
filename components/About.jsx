@@ -13,13 +13,20 @@ const About = () => {
           </p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            // Fullstack Developer
+            / / Fullstack Developer
           </p>
           <p className='py-2 text-gray-600'>
-            Hello, I&apos;m Nitin. I have completed my B.Tech degree in Computer Science from MGM-JNEC College in Aurangabad, Maharashtra. I have always had a passion for technology and working with computers. I started working with HTML and CSS to make minor edits to small college projects. What I initially thought would be just a few small edits turned into a deep love for programming.
+            Hello I&apos;m Nitin, I have completed my B.Tech degree in computer science student from MGM-JNEC college in Aurangabad,     Maharashtra. I have always had a knack for
+            technology and working with computers. I started working
+            with HTML and CSS to make some minor edits on a small college prokects. What I thought was just a few small
+            edits turned into a love for programming.
           </p>
           <p className='py-2 text-gray-600'>
-            Fascinated by how intricate programming can be, I was quickly drawn to learn more. I started learning JavaScript and became even more excited about making websites interactive. I then began creating projects in ReactJS along with some of its libraries. Currently, I spend my time building projects with ReactJS, NextJS, and learning new technologies.
+            Fascinated with how intricate programming can be I was quickly drawn
+            to learn more. I started learning javascript and was even more
+            enthused with making websites interactive. I then started making projects in reactJS along some of it&apos;s libraries. I am
+            now spending my time building projects with React JS, NextJS and
+            learning new technologies.
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
@@ -28,7 +35,7 @@ const About = () => {
           </Link>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          <Image src={AboutImg} className='rounded-xl' alt='About Image' />
+          <Image src={AboutImg} className='rounded-xl' alt='/' />
         </div>
       </div>
     </div>
